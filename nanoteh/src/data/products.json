@@ -1,0 +1,807 @@
+[ 
+  {
+    "id": 1,
+    "slug": "asus-rog-4090",
+    "name": "ASUS ROG Strix GeForce RTX 4090",
+    "categoryId": 3,
+    "price": 2799.99,
+    "description": "High-end graphics card with outstanding performance, suitable for 4K gaming and heavy rendering tasks.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "memory": "24GB GDDR6X",
+      "clockSpeed": "2610 MHz",
+      "powerConsumption": "450W",
+      "length": "357 mm",
+      "ports": "3x DisplayPort, 2x HDMI"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 2,
+    "slug": "iphone-15-pro",
+    "name": "Apple iPhone 15 Pro",
+    "categoryId": 2,
+    "price": 1099.99,
+    "description": "Latest iPhone model with advanced A17 Pro chip, titanium body and upgraded cameras.",
+    "image": "/images/Samsung-Galaxy-S25.jpg",
+    "specs": {
+      "display": "6.1-inch OLED",
+      "storage": "256GB",
+      "camera": "48MP triple-camera",
+      "battery": "3274mAh",
+      "chip": "A17 Pro"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 3,
+    "slug": "samsung-galaxy-s24",
+    "name": "Samsung Galaxy S24 Ultra",
+    "categoryId": 2,
+    "price": 1199.99,
+    "description": "Flagship Android smartphone with powerful camera, S Pen support and large AMOLED display.",
+    "image": "/images/Samsung-Galaxy-S25.jpg",
+    "specs": {
+      "display": "6.8-inch QHD+ AMOLED",
+      "camera": "200MP quad-camera",
+      "battery": "5000mAh",
+      "storage": "512GB",
+      "chip": "Snapdragon 8 Gen 3"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 4,
+    "slug": "macbook-air-m3",
+    "name": "MacBook Air M3",
+    "categoryId": 2,
+    "price": 1399.99,
+    "description": "Lightweight and efficient laptop powered by Apple’s M3 chip, great for everyday productivity.",
+    "image": "/images/Laptop.jpg",
+    "specs": {
+      "display": "13.6-inch Retina",
+      "processor": "Apple M3",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "batteryLife": "18 hours"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 5,
+    "slug": "dell-xps-15",
+    "name": "Dell XPS 15",
+    "categoryId": 3,
+    "price": 1599.99,
+    "description": "Premium Windows laptop with excellent build quality, high-resolution screen and strong performance.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "Intel Core i7-13700H",
+      "ram": "32GB",
+      "gpu": "NVIDIA RTX 4060",
+      "storage": "1TB SSD",
+      "display": "15.6-inch 4K OLED"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 6,
+    "slug": "lenovo-legion-tower",
+    "name": "Lenovo Legion Tower 7i",
+    "categoryId": 3,
+    "price": 2199.99,
+    "description": "Powerful desktop PC designed for gaming and content creation with high-end components.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "Intel i9-13900KF",
+      "gpu": "RTX 4080",
+      "ram": "32GB DDR5",
+      "storage": "2TB NVMe SSD",
+      "cooling": "Liquid cooling"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 7,
+    "slug": "logitech-mx-master-3s",
+    "name": "Logitech MX Master 3S",
+    "categoryId": 4,
+    "price": 99.99,
+    "description": "Advanced wireless mouse with ergonomic design and precision tracking for professionals.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "sensor": "8000 DPI",
+      "connectivity": "Bluetooth / USB Receiver",
+      "batteryLife": "70 days",
+      "buttons": "7",
+      "weight": "141g"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 8,
+    "slug": "keychron-k8-pro",
+    "name": "Keychron K8 Pro",
+    "categoryId": 4,
+    "price": 129.99,
+    "description": "Wireless mechanical keyboard with customizable keys and hot-swappable switches.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "switches": "Gateron Red",
+      "backlight": "RGB",
+      "layout": "TKL",
+      "connectivity": "Bluetooth / USB-C",
+      "frame": "Aluminum"
+    },
+    "date": "2025-03-23"
+  },
+  {
+    "id": 9,
+    "slug": "samsung-qled-q80c",
+    "name": "Samsung QLED Q80C 65\"",
+    "categoryId": 5,
+    "price": 999.99,
+    "description": "Stunning 4K QLED television with vibrant colors and smart features for modern living rooms.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "65 inches",
+      "resolution": "3840x2160",
+      "hdr": "HDR10+",
+      "refreshRate": "120Hz",
+      "smartTV": "Tizen OS"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 10,
+    "slug": "lg-oled-c3",
+    "name": "LG OLED C3 55\"",
+    "categoryId": 5,
+    "price": 1299.99,
+    "description": "High-end OLED TV delivering perfect blacks and stunning contrast for movie enthusiasts.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "55 inches",
+      "resolution": "4K UHD",
+      "panelType": "OLED",
+      "audio": "Dolby Atmos",
+      "gamingFeatures": "G-Sync, FreeSync"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 11,
+    "slug": "dyson-v15",
+    "name": "Dyson V15 Detect",
+    "categoryId": 6,
+    "price": 699.99,
+    "description": "Smart cordless vacuum cleaner with laser dust detection and powerful suction.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "batteryLife": "60 minutes",
+      "dustCapacity": "0.76L",
+      "power": "230AW",
+      "weight": "3.1 kg",
+      "features": "Laser, LCD screen"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 12,
+    "slug": "philips-airfryer-xxl",
+    "name": "Philips Airfryer XXL",
+    "categoryId": 6,
+    "price": 249.99,
+    "description": "Large-capacity air fryer with smart sensors for cooking crispy and healthy meals.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "capacity": "1.4 kg",
+      "power": "2225W",
+      "temperatureControl": "Yes",
+      "basketType": "Removable",
+      "smartCooking": "Fat Removal Tech"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 13,
+    "slug": "xiaomi-electric-scooter-4",
+    "name": "Xiaomi Electric Scooter 4 Pro",
+    "categoryId": 7,
+    "price": 749.99,
+    "description": "Urban electric scooter with extended range, improved power and smartphone app control.",
+    "image": "/images/Transport.jpg",
+    "specs": {
+      "maxSpeed": "25 km/h",
+      "range": "55 km",
+      "motor": "700W",
+      "battery": "446Wh",
+      "weight": "17.9 kg"
+    },
+    "date": "2025-03-23"
+  },
+  {
+    "id": 14,
+    "slug": "ninebot-g30lp",
+    "name": "Segway Ninebot MAX G30LP",
+    "categoryId": 7,
+    "price": 699.99,
+    "description": "Durable and foldable electric scooter with powerful motor and long-lasting battery.",
+    "image": "/images/Transport.jpg",
+    "specs": {
+      "topSpeed": "30 km/h",
+      "range": "40 km",
+      "motor": "350W",
+      "battery": "367Wh",
+      "brakes": "Front electric, rear disc"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 15,
+    "slug": "product-15",
+    "name": "Sample Product 15",
+    "categoryId": 2,
+    "price": 257.5,
+    "description": "Detailed description of Sample Product 15 in category New Products. It offers reliable performance and useful features.",
+    "image": "/images/Laptop.jpg",
+    "specs": {
+      "feature": "Special Launch Edition",
+      "compatibility": "Universal",
+      "limitedEdition": "Yes"
+    },
+    "date": "2025-02-23"
+  },
+  {
+    "id": 16,
+    "slug": "product-16",
+    "name": "Sample Product 16",
+    "categoryId": 2,
+    "price": 268.0,
+    "description": "Detailed description of Sample Product 16 in category Phones, Laptops. It offers reliable performance and useful features.",
+    "image": "/images/Samsung-Galaxy-S25.jpg",
+    "specs": {
+      "display": "6.5-inch AMOLED",
+      "battery": "4500mAh",
+      "camera": "Triple-lens",
+      "storage": "128GB",
+      "chip": "Snapdragon 8"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 17,
+    "slug": "product-17",
+    "name": "Sample Product 17",
+    "categoryId": 3,
+    "price": 278.5,
+    "description": "Detailed description of Sample Product 17 in category Computers. It offers reliable performance and useful features.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "AMD Ryzen 7",
+      "ram": "16GB",
+      "gpu": "RTX 3070",
+      "storage": "1TB SSD",
+      "os": "Windows 11"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 18,
+    "slug": "product-18",
+    "name": "Sample Product 18",
+    "categoryId": 4,
+    "price": 289.0,
+    "description": "Detailed description of Sample Product 18 in category Devices. It offers reliable performance and useful features.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "connectivity": "Bluetooth 5.1",
+      "batteryLife": "30 hours",
+      "type": "Peripheral",
+      "compatibility": "Windows/Mac"
+    },
+    "date": "2025-02-23"
+  },
+  {
+    "id": 19,
+    "slug": "product-19",
+    "name": "Sample Product 19",
+    "categoryId": 5,
+    "price": 299.5,
+    "description": "Detailed description of Sample Product 19 in category TV. It offers reliable performance and useful features.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "50 inches",
+      "resolution": "4K UHD",
+      "smartFeatures": "Yes",
+      "hdr": "Dolby Vision",
+      "ports": "HDMI x3, USB x2"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 20,
+    "slug": "product-20",
+    "name": "Sample Product 20",
+    "categoryId": 6,
+    "price": 310.0,
+    "description": "Detailed description of Sample Product 20 in category For Home. It offers reliable performance and useful features.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "power": "1500W",
+      "capacity": "2L",
+      "material": "Stainless steel",
+      "noiseLevel": "Low"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 21,
+    "slug": "product-21",
+    "name": "Sample Product 21",
+    "categoryId": 7,
+    "price": 320.5,
+    "description": "Detailed description of Sample Product 21 in category Transport. It offers reliable performance and useful features.",
+    "image": "/images/Transport.jpg",
+    "specs": {
+      "maxSpeed": "20 km/h",
+      "range": "30 km",
+      "motor": "300W",
+      "battery": "250Wh",
+      "weight": "12.5 kg"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 22,
+    "slug": "product-22",
+    "name": "Sample Product 22",
+    "categoryId": 3,
+    "price": 331.0,
+    "description": "Detailed description of Sample Product 22 in category New Products. It offers reliable performance and useful features.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "feature": "Special Launch Edition",
+      "compatibility": "Universal",
+      "limitedEdition": "Yes"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 23,
+    "slug": "product-23",
+    "name": "Sample Product 23",
+    "categoryId": 2,
+    "price": 341.5,
+    "description": "Detailed description of Sample Product 23 in category Phones, Laptops. It offers reliable performance and useful features.",
+    "image": "/images/Laptop.jpg",
+    "specs": {
+      "display": "6.5-inch AMOLED",
+      "battery": "4500mAh",
+      "camera": "Triple-lens",
+      "storage": "128GB",
+      "chip": "Snapdragon 8"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 24,
+    "slug": "product-24",
+    "name": "Sample Product 24",
+    "categoryId": 3,
+    "price": 352.0,
+    "description": "Detailed description of Sample Product 24 in category Computers. It offers reliable performance and useful features.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "AMD Ryzen 7",
+      "ram": "16GB",
+      "gpu": "RTX 3070",
+      "storage": "1TB SSD",
+      "os": "Windows 11"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 25,
+    "slug": "product-25",
+    "name": "Sample Product 25",
+    "categoryId": 4,
+    "price": 362.5,
+    "description": "Detailed description of Sample Product 25 in category Devices. It offers reliable performance and useful features.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "connectivity": "Bluetooth 5.1",
+      "batteryLife": "30 hours",
+      "type": "Peripheral",
+      "compatibility": "Windows/Mac"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 26,
+    "slug": "product-26",
+    "name": "Sample Product 26",
+    "categoryId": 5,
+    "price": 373.0,
+    "description": "Detailed description of Sample Product 26 in category TV. It offers reliable performance and useful features.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "50 inches",
+      "resolution": "4K UHD",
+      "smartFeatures": "Yes",
+      "hdr": "Dolby Vision",
+      "ports": "HDMI x3, USB x2"
+    },
+    "date": "2025-02-23"
+  },
+  {
+    "id": 27,
+    "slug": "product-27",
+    "name": "Sample Product 27",
+    "categoryId": 6,
+    "price": 383.5,
+    "description": "Detailed description of Sample Product 27 in category For Home. It offers reliable performance and useful features.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "power": "1500W",
+      "capacity": "2L",
+      "material": "Stainless steel",
+      "noiseLevel": "Low"
+    },
+    "date": "2025-03-23"
+  },
+  {
+    "id": 28,
+    "slug": "product-28",
+    "name": "Sample Product 28",
+    "categoryId": 7,
+    "price": 394.0,
+    "description": "Detailed description of Sample Product 28 in category Transport. It offers reliable performance and useful features.",
+    "image": "/images/Transport.jpg",
+    "specs": {
+      "maxSpeed": "20 km/h",
+      "range": "30 km",
+      "motor": "300W",
+      "battery": "250Wh",
+      "weight": "12.5 kg"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 29,
+    "slug": "product-29",
+    "name": "Sample Product 29",
+    "categoryId": 6,
+    "price": 404.5,
+    "description": "Detailed description of Sample Product 29 in category New Products. It offers reliable performance and useful features.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "feature": "Special Launch Edition",
+      "compatibility": "Universal",
+      "limitedEdition": "Yes"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 30,
+    "slug": "product-30",
+    "name": "Sample Product 30",
+    "categoryId": 2,
+    "price": 415.0,
+    "description": "Detailed description of Sample Product 30 in category Phones, Laptops. It offers reliable performance and useful features.",
+    "image": "/images/Samsung-Galaxy-S25.jpg",
+    "specs": {
+      "display": "6.5-inch AMOLED",
+      "battery": "4500mAh",
+      "camera": "Triple-lens",
+      "storage": "128GB",
+      "chip": "Snapdragon 8"
+    },
+    "date": "2025-02-23"
+  },
+  {
+    "id": 31,
+    "slug": "product-31",
+    "name": "Sample Product 31",
+    "categoryId": 3,
+    "price": 425.5,
+    "description": "Detailed description of Sample Product 31 in category Computers. It offers reliable performance and useful features.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "AMD Ryzen 7",
+      "ram": "16GB",
+      "gpu": "RTX 3070",
+      "storage": "1TB SSD",
+      "os": "Windows 11"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 32,
+    "slug": "product-32",
+    "name": "Sample Product 32",
+    "categoryId": 4,
+    "price": 436.0,
+    "description": "Detailed description of Sample Product 32 in category Devices. It offers reliable performance and useful features.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "connectivity": "Bluetooth 5.1",
+      "batteryLife": "30 hours",
+      "type": "Peripheral",
+      "compatibility": "Windows/Mac"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 33,
+    "slug": "product-33",
+    "name": "Sample Product 33",
+    "categoryId": 5,
+    "price": 446.5,
+    "description": "Detailed description of Sample Product 33 in category TV. It offers reliable performance and useful features.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "50 inches",
+      "resolution": "4K UHD",
+      "smartFeatures": "Yes",
+      "hdr": "Dolby Vision",
+      "ports": "HDMI x3, USB x2"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 34,
+    "slug": "product-34",
+    "name": "Sample Product 34",
+    "categoryId": 6,
+    "price": 457.0,
+    "description": "Detailed description of Sample Product 34 in category For Home. It offers reliable performance and useful features.",
+    "image": "/images/ForHome.jpg",
+    "specs": {
+      "power": "1500W",
+      "capacity": "2L",
+      "material": "Stainless steel",
+      "noiseLevel": "Low"
+    },
+    "date": "2025-02-23"
+  },
+  {
+    "id": 35,
+    "slug": "product-35",
+    "name": "Sample Product 35",
+    "categoryId": 7,
+    "price": 467.5,
+    "description": "Detailed description of Sample Product 35 in category Transport. It offers reliable performance and useful features.",
+    "image": "/images/Transport.jpg",
+    "specs": {
+      "maxSpeed": "20 km/h",
+      "range": "30 km",
+      "motor": "300W",
+      "battery": "250Wh",
+      "weight": "12.5 kg"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 36,
+    "slug": "product-36",
+    "name": "Sample Product 36",
+    "categoryId": 4,
+    "price": 478.0,
+    "description": "Detailed description of Sample Product 36 in category New Products. It offers reliable performance and useful features.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "feature": "Special Launch Edition",
+      "compatibility": "Universal",
+      "limitedEdition": "Yes"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 37,
+    "slug": "product-37",
+    "name": "Sample Product 37",
+    "categoryId": 2,
+    "price": 488.5,
+    "description": "Detailed description of Sample Product 37 in category Phones, Laptops. It offers reliable performance and useful features.",
+    "image": "/images/Samsung-Galaxy-S25.jpg",
+    "specs": {
+      "display": "6.5-inch AMOLED",
+      "battery": "4500mAh",
+      "camera": "Triple-lens",
+      "storage": "128GB",
+      "chip": "Snapdragon 8"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 38,
+    "slug": "product-38",
+    "name": "Sample Product 38",
+    "categoryId": 3,
+    "price": 499.0,
+    "description": "Detailed description of Sample Product 38 in category Computers. It offers reliable performance and useful features.",
+    "image": "/images/Computer.jpg",
+    "specs": {
+      "processor": "AMD Ryzen 7",
+      "ram": "16GB",
+      "gpu": "RTX 3070",
+      "storage": "1TB SSD",
+      "os": "Windows 11"
+    },
+    "date": "2025-04-23"
+  },
+  {
+    "id": 39,
+    "slug": "product-39",
+    "name": "Sample Product 39",
+    "categoryId": 4,
+    "price": 509.5,
+    "description": "Detailed description of Sample Product 39 in category Devices. It offers reliable performance and useful features.",
+    "image": "/images/Chair.jpg",
+    "specs": {
+      "connectivity": "Bluetooth 5.1",
+      "batteryLife": "30 hours",
+      "type": "Peripheral",
+      "compatibility": "Windows/Mac"
+    },
+    "date": "2025-05-23"
+  },
+  {
+    "id": 40,
+    "slug": "product-40",
+    "name": "Sample Product 40",
+    "categoryId": 5,
+    "price": 520.0,
+    "description": "Detailed description of Sample Product 40 in category TV. It offers reliable performance and useful features.",
+    "image": "/images/TV.jpg",
+    "specs": {
+      "screenSize": "50 inches",
+      "resolution": "4K UHD",
+      "smartFeatures": "Yes",
+      "hdr": "Dolby Vision",
+      "ports": "HDMI x3, USB x2"
+    },
+    "date": "2025-03-23"
+  },
+  {
+    "id": 41,
+    "name": "Smart TV UltraHD",
+    "categoryId": 5,
+    "price": 119,
+    "description": "High-definition display for home entertainment.",
+    "specs": {
+      "Resolution": "4K",
+      "HDR": "Yes",
+      "Smart Features": "Yes"
+    },
+    "image": "/images/TV.jpg",
+    "date": "2025-05-24"
+  },
+  {
+    "id": 42,
+    "name": "Smart Glasses ViewX",
+    "categoryId": 4,
+    "price": 312,
+    "description": "Wearable smart device with useful features.",
+    "specs": {
+      "Battery Life": "7 days",
+      "Connectivity": "Bluetooth 5.0",
+      "Waterproof": "Yes"
+    },
+    "image": "/images/Chair.jpg",
+    "date": "2025-05-25"
+  },
+  {
+    "id": 43,
+    "name": "Coffee Maker BrewPro",
+    "categoryId": 6,
+    "price": 845,
+    "description": "Smart appliance for home comfort.",
+    "specs": {
+      "Power": "1500W",
+      "Control": "App + Manual",
+      "Modes": "3"
+    },
+    "image": "/images/ForHome.jpg",
+    "date": "2025-05-29"
+  },
+  {
+    "id": 44,
+    "name": "OLED ScreenFrame",
+    "categoryId": 5,
+    "price": 651,
+    "description": "High-definition display for home entertainment.",
+    "specs": {
+      "Resolution": "4K",
+      "HDR": "Yes",
+      "Smart Features": "Yes"
+    },
+    "image": "/images/TV.jpg",
+    "date": "2025-05-23"
+  },
+  {
+    "id": 45,
+    "name": "Hoverboard BalanceX",
+    "categoryId": 7,
+    "price": 817,
+    "description": "Modern transport or tracking device for mobility.",
+    "specs": {
+      "Speed": "25km/h",
+      "Range": "30km",
+      "Battery": "36V"
+    },
+    "image": "/images/Transport.jpg",
+    "date": "2025-05-16"
+  },
+  {
+    "id": 46,
+    "name": "4K Projector BeamIt",
+    "categoryId": 5,
+    "price": 1221,
+    "description": "High-definition display for home entertainment.",
+    "specs": {
+      "Resolution": "4K",
+      "HDR": "Yes",
+      "Smart Features": "Yes"
+    },
+    "image": "/images/TV.jpg",
+    "date": "2025-04-23"
+  },
+  {
+    "id": 47,
+    "name": "LED TV VisionMax",
+    "categoryId": 5,
+    "price": 240,
+    "description": "High-definition display for home entertainment.",
+    "specs": {
+      "Resolution": "4K",
+      "HDR": "Yes",
+      "Smart Features": "Yes"
+    },
+    "image": "/images/TV.jpg",
+    "date": "2025-05-14"
+  },
+  {
+    "id": 48,
+    "name": "VR Headset Vision",
+    "categoryId": 4,
+    "price": 1224,
+    "description": "Wearable smart device with useful features.",
+    "specs": {
+      "Battery Life": "7 days",
+      "Connectivity": "Bluetooth 5.0",
+      "Waterproof": "Yes"
+    },
+    "image": "/images/Chair.jpg",
+    "date": "2025-03-18"
+  },
+  {
+    "id": 49,
+    "name": "Smartwatch FitLife",
+    "categoryId": 4,
+    "price": 1428,
+    "description": "Wearable smart device with useful features.",
+    "specs": {
+      "Battery Life": "7 days",
+      "Connectivity": "Bluetooth 5.0",
+      "Waterproof": "Yes"
+    },
+    "image": "/images/Chair.jpg",
+    "date": "2025-05-26"
+  },
+  {
+    "id": 50,
+    "name": "TV Box CineHome",
+    "categoryId": 5,
+    "price": 981,
+    "description": "High-definition display for home entertainment.",
+    "specs": {
+      "Resolution": "4K",
+      "HDR": "Yes",
+      "Smart Features": "Yes"
+    },
+    "image": "/images/TV.jpg",
+    "date": "2025-02-23"
+  }
+]

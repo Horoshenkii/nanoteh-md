@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: #e8e8ee;
+}

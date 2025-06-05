@@ -1,0 +1,32 @@
+[
+    {
+        "id": 2,
+        "slug": "phones-laptops",
+        "name": "Phones, laptops"
+    },
+    {
+        "id": 3,
+        "slug": "computers",
+        "name": "Computers"
+    },
+    {
+        "id": 4,
+        "slug": "devices",
+        "name": "Devices"
+    },
+    {
+        "id": 5,
+        "slug": "tv",
+        "name": "TV"
+    },
+    {
+        "id": 6,
+        "slug": "for-home",
+        "name": "For home"
+    },
+    {
+        "id": 7,
+        "slug": "transport",
+        "name": "Transport"
+    }
+]
