@@ -5,6 +5,7 @@ import Index from './pages/Index'
 import NewProducts from './pages/NewProducts'
 import Categorized from './pages/Categorized'
 import Product from './pages/Product'
+import Cart from './pages/Cart'
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
             {
                 path: "product/:productSlug",
                 Component: Product
+            },
+            {
+                path: "cart",
+                Component: Cart
             }
         ]
     }

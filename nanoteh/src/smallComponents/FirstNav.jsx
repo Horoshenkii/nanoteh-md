@@ -34,9 +34,9 @@ const FirstNav = () => {
             </Link>
         </li>
         <li>
-            <Link to="/" className='w-full bg-zinc-600 h-16 flex items-center px-16 gap-4'>
+            <Link to="/cart" className='w-full bg-zinc-600 h-16 flex items-center px-16 gap-4'>
                 <FaShoppingBasket className='text-[22px] text-white'/>
-                <p className='text-white font-semibold text-lg'>Basket</p>
+                <p className='text-white font-semibold text-lg'>Cart</p>
             </Link>
         </li>
     </ul>

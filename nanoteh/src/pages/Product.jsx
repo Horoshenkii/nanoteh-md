@@ -27,6 +27,12 @@ const Product = () => {
 
         const [months, setMonths] = useState('12')
 
+        const addToCart = () => {
+            let cart = JSON.parse(localStorage.getItem("cart")) || []
+        }
+
+        const [quantity, setQuantity] = useState(1)
+
         return (
             <section className='lg:ml-[400px] lg:mr-[100px] mt-[50px]'>
                 <h1 className='text-xl font-bold text-[#4169E1] w-[95%] m-auto mb-5 lg:w-full'>{product.name}</h1>
@@ -44,12 +50,37 @@ const Product = () => {
                             </ul>
                         </div>
                         <div className='bg-white py-10 rounded-lg'>
-                            <div className='flex xl:flex-col xl:items-start xl:gap-4 m-auto w-[95%] lg:px-5 items-center justify-between'>
-                                <button className='cursor-pointer flex gap-3 rounded-xl bg-[#E6E6FA] items-center p-6 group hover:bg-[#d1d1ff] duration-200'>
-                                    <p className='font-semibold text-lg text-zinc-800 group-hover:text-[#4169E1] duration-200'>{product.price}$</p>
-                                    <FaShoppingBasket className='text-zinc-800 text-xl group-hover:text-[#4169E1] duration-200'/>
-                                </button>
-                                <div className='rounded-lg flex flex-col items-center gap-3 p-4 bg-[#bbbbe6]'>
+                            <div className='flex xl:items-start items-center xl:gap-4 m-auto w-[95%] lg:px-5 justify-between'>
+                                <div className='bg-[#E6E6FA] rounded-xl flex flex-col justify-between gap-4 items-center pt-5 h-[150px]'>
+                                    <div>
+                                        <button
+                                        className='w-8 h-8 rounded-full bg-white'
+                                        onClick={() => setQuantity((prev) => prev > 1 ? prev - 1 : prev)}>
+                                        -</button>
+                                        <input
+                                        className='text-center font-semibold text-zinc-800 text-lg'
+                                        onChange={(ev) => setQuantity((prev) => ev.target.value !== "" && +ev.target.value > 0 && +ev.target.value <= 100 ? +ev.target.value : "")}
+                                        onBlur={(ev) => {
+                                            if (ev.target.value === "")
+                                            {
+                                                setQuantity(1)
+                                            }
+                                        }} 
+                                        type="number"
+                                        min="1" max="100" value={quantity} />
+                                        <button
+                                        className='w-8 h-8 rounded-full bg-white'
+                                        onClick={() => setQuantity((prev) => prev < 100 ? prev + 1 : prev)}>
+                                        +</button>
+                                    </div>
+                                    <button
+                                    onClick={addToCart} 
+                                    className='cursor-pointer flex gap-3 rounded-xl items-center p-7 group hover:bg-[#d1d1ff] duration-200'>
+                                        <p className='font-semibold text-lg text-zinc-800 group-hover:text-[#4169E1] duration-200'>{(product.price * quantity).toFixed(2)}$</p>
+                                        <FaShoppingBasket className='text-zinc-800 text-xl group-hover:text-[#4169E1] duration-200'/>
+                                    </button>
+                                </div>
+                                <div className='rounded-lg flex flex-col items-center gap-3 p-4 justify-center bg-[#bbbbe6] h-[150px]'>
                                     <div className='flex gap-2 items-center flex-col lg:flex-row'>
                                     <p className='text-zinc-800 text-lg font-semibold'>Take credit for</p>
                                     <select

@@ -35,9 +35,9 @@ const EditedFirstNav = () => {
             </Link>
         </li>
         <li>
-            <Link to="/" className='flex items-center flex-col relative group'>
+            <Link to="/cart" className='flex items-center flex-col relative group'>
                 <FaShoppingBasket className='duration-150 group-hover:text-[#4169E1] text-[30px] text-white'/>
-                <p className='pointer-events-none whitespace-nowrap text-white mt-1 font-semibold text-md absolute top-full opacity-0 group-hover:opacity-100 rounded-lg bg-[#4169E1] py-1 px-3 duration-150'>Basket</p>
+                <p className='pointer-events-none whitespace-nowrap text-white mt-1 font-semibold text-md absolute top-full opacity-0 group-hover:opacity-100 rounded-lg bg-[#4169E1] py-1 px-3 duration-150'>Cart</p>
             </Link>
         </li>
     </ul>
