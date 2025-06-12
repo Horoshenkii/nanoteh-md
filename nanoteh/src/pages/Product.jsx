@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import categories from "../data/categories.json"
 import { Link } from 'react-router';
+import { toast, Bounce } from 'react-toastify';
 
 const Product = () => {
     
@@ -29,6 +30,45 @@ const Product = () => {
 
         const addToCart = () => {
             let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+            const existingProduct = cart.find((cartItem) => cartItem.productId === product.id)
+            if (existingProduct)
+            {
+                cart = cart.map((cartItem) => {
+                    if (cartItem.productId === product.id)
+                    {
+                        return {
+                            ...cartItem,
+                            quantity: cartItem.quantity + quantity
+                        }
+                    }
+                    return cartItem
+                })
+            }
+            else
+            {
+                cart.push({
+                id: Date.now(),
+                productId: product.id,
+                quantity: quantity
+                })
+            }
+
+            localStorage.setItem("cart", JSON.stringify(cart))
+
+            setQuantity(1)
+
+            toast.success('Product added to cart', {
+                position: "bottom-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
         }
 
         const [quantity, setQuantity] = useState(1)
@@ -58,7 +98,7 @@ const Product = () => {
                                         onClick={() => setQuantity((prev) => prev > 1 ? prev - 1 : prev)}>
                                         -</button>
                                         <input
-                                        className='text-center font-semibold text-zinc-800 text-lg'
+                                        className='focus:outline-none text-center font-semibold text-zinc-800 text-lg'
                                         onChange={(ev) => setQuantity((prev) => ev.target.value !== "" && +ev.target.value > 0 && +ev.target.value <= 100 ? +ev.target.value : "")}
                                         onBlur={(ev) => {
                                             if (ev.target.value === "")
@@ -93,9 +133,9 @@ const Product = () => {
                                         <option value="36">36 months</option>
                                     </select>
                                     </div>
-                                    <p className='font-semibold border-t-2 border-white w-full text-center pt-2'>{months === 12 ? (product.price * 1.2 / months).toFixed(2) + '$ per month' :
-                                    months === 24 ? (product.price * 1.4 / months).toFixed(2) + '$ per month' :
-                                    (product.price * 1.6 / months).toFixed(2) + '$ per month'}</p>
+                                    <p className='font-semibold border-t-2 border-white w-full text-center pt-2'>{months === 12 ? ((product.price * quantity) * 1.2 / months).toFixed(2) + '$ per month' :
+                                    months === 24 ? ((product.price * quantity) * 1.4 / months).toFixed(2) + '$ per month' :
+                                    ((product.price * quantity) * 1.6 / months).toFixed(2) + '$ per month'}</p>
                                 </div>
                             </div>
                         </div>

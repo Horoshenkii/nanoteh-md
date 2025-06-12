@@ -666,6 +666,7 @@
   },
   {
     "id": 41,
+    "slug": "smart-tv-ultrahd",
     "name": "Smart TV UltraHD",
     "categoryId": 5,
     "price": 119,
@@ -680,6 +681,7 @@
   },
   {
     "id": 42,
+    "slug": "smart-glasses-viewx",
     "name": "Smart Glasses ViewX",
     "categoryId": 4,
     "price": 312,
@@ -694,6 +696,7 @@
   },
   {
     "id": 43,
+    "slug": "coffee-maker-brewpro",
     "name": "Coffee Maker BrewPro",
     "categoryId": 6,
     "price": 845,
@@ -708,6 +711,7 @@
   },
   {
     "id": 44,
+    "slug": "oled-screenframe",
     "name": "OLED ScreenFrame",
     "categoryId": 5,
     "price": 651,
@@ -722,6 +726,7 @@
   },
   {
     "id": 45,
+    "slug": "hoverboard-balancex",
     "name": "Hoverboard BalanceX",
     "categoryId": 7,
     "price": 817,
@@ -736,6 +741,7 @@
   },
   {
     "id": 46,
+    "slug": "4k-projector-beamit",
     "name": "4K Projector BeamIt",
     "categoryId": 5,
     "price": 1221,
@@ -750,6 +756,7 @@
   },
   {
     "id": 47,
+    "slug": "led-tv-visionmax",
     "name": "LED TV VisionMax",
     "categoryId": 5,
     "price": 240,
@@ -764,6 +771,7 @@
   },
   {
     "id": 48,
+    "slug": "vr-headset-vision",
     "name": "VR Headset Vision",
     "categoryId": 4,
     "price": 1224,
@@ -778,6 +786,7 @@
   },
   {
     "id": 49,
+    "slug": "smartwatch-fitlife",
     "name": "Smartwatch FitLife",
     "categoryId": 4,
     "price": 1428,
@@ -792,6 +801,7 @@
   },
   {
     "id": 50,
+    "slug": "tv-box-cinehome",
     "name": "TV Box CineHome",
     "categoryId": 5,
     "price": 981,
