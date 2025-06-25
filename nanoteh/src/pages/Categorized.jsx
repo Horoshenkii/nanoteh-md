@@ -51,9 +51,9 @@ const Categorized = () => {
     else 
     {
         return (
-            <section className='w-[500px] m-auto'>
-                <p className='font-semibold text-xl'>404</p>
-                <p className='font-semibold text-xl'>Category not found</p>
+            <section className='m-auto lg:mr-[100px] pt-32 pb-32 lg:ml-[400px] flex flex-col items-center'>
+                <p className='font-bold text-zinc-600 text-xl'>404</p>
+                <p className='font-bold text-zinc-600 text-2xl'>Category not found</p>
             </section>
         )
     }

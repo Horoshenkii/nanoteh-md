@@ -27,7 +27,7 @@ const names = {
   7: 'Transport'
 }
 
-const Categories = () => {
+const Categories = ( { switchMenu } ) => {
   return (
     <nav
         className='w-full'>
@@ -35,6 +35,7 @@ const Categories = () => {
             <li>
               <Link 
               to="/new-products"
+              onClick={switchMenu}
               className='w-full h-16 flex items-center px-16 gap-4'>
                 <MdFiberNew className='text-[22px] text-white'/>
                 <p className='text-white font-semibold text-lg'>New Products</p>
@@ -43,6 +44,7 @@ const Categories = () => {
             {categories.map((category) => (
             <li key={category.id}>
               <Link 
+              onClick={switchMenu}
               to={`category/${category.slug}`} 
               className={`w-full h-16 flex items-center px-16 gap-4 ${category.id % 2 === 0 ? 'bg-zinc-600' : ''}`}>
                 {icons[category.id]}

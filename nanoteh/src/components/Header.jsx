@@ -26,7 +26,7 @@ const Header = () => {
         onClick={() => setOpenNav(!openNav)}>
           <IoClose className='text-3xl text-zinc-400'/>
         </button>
-        <FirstNav />
+        <FirstNav switchNav={() => setOpenNav(false)}/>
       </nav>
 {/* First Nav for phones */}
 {/* Categories for phones: */}
@@ -38,7 +38,7 @@ const Header = () => {
         onClick={() => setOpenCategories(!openCategories)}>
           <IoClose className='text-3xl text-zinc-400'/>
         </button>
-        <Categories />
+        <Categories switchMenu={() => setOpenCategories(false)}/>
       </div>
 {/* Categories for phones */}
 {/* Side Nav for PC (Categories): */}

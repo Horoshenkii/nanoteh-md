@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 import { FaGoogle } from "react-icons/fa6";
 
 
-const FirstNav = () => {
+const FirstNav = ( { switchNav } ) => {
 
     const [login, openLogin] = useState(false)
 
@@ -42,7 +42,8 @@ const FirstNav = () => {
   )}
 
     <ul className='flex flex-col'>
-        <li>
+        <li
+        onClick={switchNav}>
             <button 
             onClick={() => openLogin(!login)}
             className='w-full bg-zinc-600 h-16 flex items-center px-16 gap-3'>
@@ -50,25 +51,29 @@ const FirstNav = () => {
                 <p className='text-white font-semibold text-lg'>Login</p>
             </button>
         </li>
-        <li>
+        <li
+        onClick={switchNav}>
             <Link to="/"className='w-full h-16 flex items-center px-16 gap-4'>
                 <GrLanguage className='text-[22px] text-white'/>
                 <p className='text-white font-semibold text-lg'>Language</p>
             </Link>
         </li>
-        <li>
+        <li
+        onClick={switchNav}>
             <Link to="/" className='w-full bg-zinc-600 h-16 flex items-center px-16 gap-4'>
                 <GrFavorite className='text-[22px] text-white'/>
                 <p className='text-white font-semibold text-lg'>Favorites</p>
             </Link>
         </li>
-        <li>
+        <li
+        onClick={switchNav}>
             <Link to="/" className='w-full h-16 flex items-center px-16 gap-4'>
                 <MdOutlineCompareArrows className='text-[22px] text-white'/>
                 <p className='text-white font-semibold text-lg'>Compare</p>
             </Link>
         </li>
-        <li>
+        <li
+        onClick={switchNav}>
             <Link to="/cart" className='w-full bg-zinc-600 h-16 flex items-center px-16 gap-4'>
                 <FaShoppingBasket className='text-[22px] text-white'/>
                 <p className='text-white font-semibold text-lg'>Cart</p>

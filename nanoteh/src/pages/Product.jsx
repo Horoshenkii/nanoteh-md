@@ -15,11 +15,19 @@ const Product = () => {
     
     const product = products.find(pro => pro.slug === productSlug)
 
+    if (!product)
+    {
+        return (
+            <section className='m-auto lg:mr-[100px] pt-32 pb-32 lg:ml-[400px] flex flex-col items-center'>
+                <p className='font-bold text-zinc-600 text-xl'>404</p>
+                <p className='font-bold text-zinc-600 text-2xl'>Product not found</p>
+            </section>
+        )
+     }
+
     const category = categories.find(cat => cat.id === product.categoryId)
 
-    
-    if (product && category)
-        {
+    if (product && category) {
 
         const recommendedProducts = products.filter(recommendedProduct => 
             recommendedProduct.categoryId === category.id &&
@@ -188,15 +196,6 @@ const Product = () => {
                         ))}
                     </Swiper>
                 </div>
-            </section>
-        )
-    }
-    else
-    {
-        return (
-            <section className='w-[500px] m-auto'>
-                <p className='font-semibold text-xl'>404</p>
-                <p className='font-semibold text-xl'>Product not found</p>
             </section>
         )
     }
