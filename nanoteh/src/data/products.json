@@ -43,9 +43,9 @@
     "image": "/images/Samsung-Galaxy-S25.jpg",
     "specs": {
       "display": "6.8-inch QHD+ AMOLED",
+      "storage": "512GB",
       "camera": "200MP quad-camera",
       "battery": "5000mAh",
-      "storage": "512GB",
       "chip": "Snapdragon 8 Gen 3"
     },
     "date": "2025-04-23"
